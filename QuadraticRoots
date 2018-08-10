@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+int main(void) {
+        float a,b,c;
+        float x1,x2;
+        scanf("%f",&a);
+        scanf("\n%f",&b);
+        scanf("\n%f",&c);
+        x1=(-b+sqrt(b*b-(4*a*c)))/2*a;
+        x2=(-b-sqrt(b*b-(4*a*c)))/2*a;
+            printf("% 0.8f", x1);
+            printf("\n% 0.8f", x2);
+        
+	return 0;
+}
