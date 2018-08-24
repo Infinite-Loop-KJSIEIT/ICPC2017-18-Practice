@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include<math.h>
+int main(void) 
+{
+    int T;
+    scanf("%d",&T);
+    while(T-->0)
+  {
+    int n,a[10],i,c[10],count1=0,count2=0 ;
+    scanf("\n %d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("\n %d",&a[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        scanf("\n %d",&c[i]);
+    }
+            for(i=0;i<n;i++)
+            {
+                if(a[i]<=c[i])
+                    {
+                        count1++;
+                    }
+                    if(a[i]<=c[n-1-i])
+                    {
+                        count2++;
+                    }
+            }    
+            if(count1==n && count2==n)
+            printf("both\n");
+            else if(count1==n)
+            printf("front\n");
+            else if(count2==n)
+            printf("back\n");
+            else
+            printf("none\n");
+  }          
+    return 0;
+}
