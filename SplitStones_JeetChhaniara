@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c,x,y,min,T;
+    scanf("%d",&T);
+    while(T-->0)
+    {
+    scanf("%d %d %d %d %d",&a,&b,&c,&x,&y);
+    if(a+b+c==x+y)
+    {
+        min=(a<b?(a<c?a:c):(b<c?b:c));
+        if(x<min || y<min)
+        {
+            printf("\nNO");
+        }    
+        else
+        {
+            printf("\nYES");
+        }    
+    }
+    else
+    {
+        printf("\nNO");
+    }
+    }
+    return 0;
+}
